@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head></head>
+	<body style="margin: 200px;">
+    <center><h1 style="padding: 12px 28px;">Temperature Conversion Application</h1></center>
+	<center>
+		<button style="background-color: #e7e7e7; color: black; padding: 12px 28px;" id="FTC" onclick="FTC()">Farenheit to celicius</button>
+		<button style="background-color: #e7e7e7; color: black; padding: 12px 28px;" id="CTF" onclick="CTF()">Celicius to farenheit</button>
+		<button style="background-color: #e7e7e7; color: black; padding: 12px 28px;" id="cancel" onclick="cancel()">Reload</button>
+	</center>
+	<script>
+  function cancel() {
+    location.reload();
+}
+function FTC() {
+var Temperature =Number(prompt("Please enter the Temperature : ")) ;
+var celiciusTemp = (Temperature - 32) * 5 / 9;
+document.getElementById("FTC").innerHTML = celiciusTemp+"  celicius";
+}
+function CTF() {
+var Temperature =Number(prompt("Please enter the Temperature : ")) ;
+var farenheitTemp = Temperature + 9 / 5 + 32;
+document.getElementById("CTF").innerHTML = farenheitTemp+" Farenheit";
+}
+</script>
+</body>
+</html>
