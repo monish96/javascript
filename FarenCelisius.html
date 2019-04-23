@@ -19,7 +19,7 @@ document.getElementById("FTC").innerHTML = celiciusTemp+"  celicius";
 }
 function CTF() {
 var Temperature =Number(prompt("Please enter the Temperature : ")) ;
-var farenheitTemp = Temperature + 9 / 5 + 32;
+var farenheitTemp = (Temperature * (9 / 5)) + 32;
 document.getElementById("CTF").innerHTML = farenheitTemp+" Farenheit";
 }
 </script>
